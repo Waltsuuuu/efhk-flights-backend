@@ -33,7 +33,7 @@ const fetchFlightData = async () => {
         return;
       }
 
-      // Extract flight data
+      // Extract necessary flight data
       flights = result.flights.arr[0].body[0].flight.map(flight => ({
         actype: flight.actype[0], // aircraft type
         acreg: flight.acreg[0], // aircraft registration
